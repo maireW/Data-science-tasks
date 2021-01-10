@@ -1,0 +1,47 @@
+# task 1
+import random
+myName = input("Hello! What is your name?")
+number = random.randint(1, 10)
+print("Hi, " + myName + "I am thinking of a number between 1 and 10. Can you guess it.")
+guess = (input("Take a guess:"))
+if guess == number:
+    print("Yes" + myName + "You guessed my number.")
+else:
+    print("Wrong, better luck next time")
+    
+ # task 2
+FavNum = int(input("What is your favourite number between 1 and 100?"))
+if FavNum <= 34:
+    print("Why aren't koalas actual bears? They don't meet the koalafications.")
+elif FavNum <= 66:
+    print("Why is England the wettest country? Because the queen has reigned there for years.”")
+else:
+    print("Whats brown and sticky? A stick.")
+    
+# Task 3
+FavStarter = input("What is your favourite starter?")
+FavMain = input("What is your favourite main course?")
+FavDessert = input("What is your favourite dessert?")
+FavDrink = input("What is your favourite drink?")
+print("Your favourite meal is" + FavStarter+FavMain+FavDessert + "with a glass of" + FavDrink)
+
+# task 4
+i = 2000
+
+while i > 1001:
+    print("The value of i is:", i)
+    i *= 0.9
+    
+ # task 5
+FirstN = int(input("What is your first number?"))
+SecNum = int(input("What is your second number?"))
+FinalNum = input("Enter A to add, B to subtract, C to divide, D to multiply")
+
+if FinalNum == "A" :
+    print(FirstN+SecNum)
+elif FinalNum == "B" :
+    print(FirstN-SecNum)
+elif FinalNum == "C" :
+    print(FirstN/SecNum)
+elif FinalNum == "D" :
+    print(FirstN*SecNum)   
