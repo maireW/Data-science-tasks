@@ -15,7 +15,7 @@ print(array3)
 #task4 change all odd numbers to minus one
 arrayA = np.arange(1, 91, 1) 
 arrayA[arrayA%2==1] = -1        
-#above select & multiply only odd numbers, doesn't effect even ones
+#above select only odd numbers, doesn't effect even ones
 print(arrayA)
 
 
