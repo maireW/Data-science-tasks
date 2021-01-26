@@ -13,7 +13,7 @@ array3 = np.arange(1,11,2)
 print(array3)
 
 #task 5 convert 1d array to 2d with 2 rows)
-array_5 = np.array([1,2,3,4,5,6,7,8,9,10,11,12])
+array_5 = np.array([1,2,3,4,5,6,7,8,9,10])
 print(array_5)
 newArray_5 = array.reshape(2,5)
 print(newArray_5)
