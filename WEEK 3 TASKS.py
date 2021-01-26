@@ -12,13 +12,13 @@ my_file.close()
 #task 2 Write a program to ask a student for their percentage mark and convert this to a grade
 def mark_grade(inp_result):
     result =  inp_result
-    if result  > 80:
+    if result  >= 80:
         print ("You got an A*")
-    elif result >70:
+    elif result >=70:
         print ("You got a A")
-    elif result >60:
+    elif result >=60:
         print ("You got a B")
-    elif result >50:
+    elif result >=50:
         print ("You got a C")
     elif result <50:
         print ("You did not pass the exam")
