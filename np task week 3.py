@@ -12,7 +12,7 @@ print(newarray2)
 array3 = np.arange(1,11,2)
 print(array3)
 
-#task4 change all odd numbers to -1
+#task4 change all odd numbers to minus values
 array4 = np.arange(1, 91, 1) 
 array4[array4%2==1] *= -1        
 #above select & multiply only odd numbers, doesn't effect even ones
