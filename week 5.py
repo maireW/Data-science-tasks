@@ -1,10 +1,15 @@
+#simple linear regression https://stackabuse.com/linear-regression-in-python-with-scikit-learn/
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 data = pd.read_csv("student_scores.csv")
 print(data)
+#print numbe rof rows and columns
 print(data.shape)
+#retrieves the first 5 records from the dataset
 print(data.head())
+#see statistical details of the dataset
+print(data.describe())
 data.plot(x='Hours', y='Scores', style='o')
 plt.title('Hours vs Percentage')
 plt.xlabel('Hours Studied')
