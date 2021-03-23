@@ -54,7 +54,7 @@ ggplot(data = df, aes(x, y = x^2))  +ggtitle("y=x^2") +
 
 #4. Create a simple bar plot of five subjects
 
-#use dataset dose
+#use dataset ToothGrowth
 df <- data.frame(dose=c("D0.5", "D1", "D2"),
                  len=c(4.2, 10, 29.5))
 head(df)
@@ -62,5 +62,15 @@ head(df)
 p<-ggplot(data=df, aes(x=dose, y=len)) + ggtitle("effect of Vitamin C on Tooth growth")  +
   geom_bar(stat="identity")
 p
+
+
+#5. Using the ggplot in-built data sets in RStudio and the qplot function, create a data visualization using your preferred data set.
+
+?economics
+ggplot(data = economics, aes(date, unemploy))  +ggtitle("Unemployment") + 
+  geom_line(color = "blue") + ylab("Unemployment (000)")
+
+ggplot(data = economics, aes(pce, psavert))  +ggtitle("Unemployment vs savings rate") + 
+  geom_line(color = "blue") + xlab("consumption expenditure ($billion)") + ylab("Savings rate")
 
 
